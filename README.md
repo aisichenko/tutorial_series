@@ -14,22 +14,24 @@ We only need to do this once for every computer. Carefully follow these steps:
 
 4. For **Title**, enter the name of your computer, such as andrei_macbook_air. Something specific to your computer.
 
-5. Now the hard part - generating the SSH key. We'll do it once and that's it. Here's how.
+5. For the **Key**, now that's the hard part - generating the SSH key. We'll do it once and that's it. Here's how.
 
-6a. On Windows:
+6. 
 
-* Open Git Bash and type `ssh-keygen -t rsa`
-* Press enter when it says Enter file...
-* No need for passphrase, press enter.
-* Type `cat ~/.ssh/id_rsa.pub`
-* Copy the output and paste in the Github "Key" box. Click **Add SSH key**. 
+  a. On Windows:
 
-6b. On Mac
+    * Open Git Bash and type `ssh-keygen -t rsa`
+    * Press enter when it says Enter file...
+    * No need for passphrase, press enter. Press enter again when prompted.
+    * Type `cat ~/.ssh/id_rsa.pub`
+    * Copy the output and paste in the Github "Key" box. Click **Add SSH key**. 
 
-* Open Terminal and type `ssh-keygen -t rsa -b 4096 -C "aisichenko@ucsb.edu"` using your email.
-* Press enter when it says Enter file...
-* No need for passphrase, press enter.
-* Type `pbcopy < ~/.ssh/id_rsa.pub` which will automatically copy the key. Paste it in the Github "Key" box. Click to **Add SSH key**.
+  b. On Mac
+
+    * Open Terminal and type `ssh-keygen -t rsa -b 4096 -C "aisichenko@ucsb.edu"` using your email.
+    * Press enter when it says Enter file...
+    * No need for passphrase, press enter. Press enter again when prompted.
+    * Type `pbcopy < ~/.ssh/id_rsa.pub` which will automatically copy the key. Paste it in the Github "Key" box. Click to **Add SSH key**.
 
 7. Under Enable SSO, below your should see a button that says "Authorize" for the ucsb organization, click this. That's it.
 
@@ -39,14 +41,15 @@ To clone any repository in ucsb organization (and therefore in the ocpi team), t
 git clone git@github.com:ucsb/tutorial_series.git  
 ```
 
-## 1. Git, Github, and code organization
-- everyone initialize a repository on their computer using their own Github account
-- Learn how to clone repository and make changes
-- How to commit and push repository
-- Branches
-- Merge issues and other uh-ohs
+## 1. Git and Jupyter
 
-## 2. Python and Jupyter notebooks
+- basics of Jupyter
+- basics of Git (add, commit, branches, merging)
+- using a remote, such as Github.com
+- merging issues
+
+## 2. Python and how to use it
+
 - Why Python
   - modular
   - open source packages
@@ -56,6 +59,7 @@ git clone git@github.com:ucsb/tutorial_series.git
   - Jupyter notebooks --> the case for lab workflow and research life cycle
 
 ## 3. Lab control
+
 - The idea of an instrument class i.e. "driver"
   - creating "instance" of an instrument and accessing its methods and settings
   - having multiple instruments, just define by the connection address
@@ -63,9 +67,3 @@ git clone git@github.com:ucsb/tutorial_series.git
   - in JupyterLab
 - Advanced: asynchronous control
   - one-sample testing vs. systems-control
-  
-## Bonus round: Documentation and writing good code
-- it will help you get a job (especially in a startup)
-- auto-generating documentation using docstrings
-- coding conventions and naming
-
