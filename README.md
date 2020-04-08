@@ -1,44 +1,12 @@
 # Welcome to the OCPI lab automation tutorial series
 
-Step 1. Get the repository onto your computer!
+Step 0. Get the repository onto your computer!
 
-Because of security reasons, we use the UCSB organization. Because of the Single-Sign-On authentification, we have to do an extra step: setting up an SSH key for your computer.
 
-We only need to do this once for every computer. Carefully follow these steps:
-
-1. Go to your Github profile icon and select **Settings**.
-
-2. Select **SSH and GPG keys**.
-
-3. Click **New SSH key**. 
-
-4. For **Title**, enter the name of your computer, such as andrei_macbook_air. Something specific to your computer.
-
-5. For the **Key**, now that's the hard part - generating the SSH key. We'll do it once and that's it. Here's how.
-
-6. 
-
-  a. On Windows:
-
-    * Open Git Bash and type `ssh-keygen -t rsa`
-    * Press enter when it says Enter file...
-    * No need for passphrase, press enter. Press enter again when prompted.
-    * Type `cat ~/.ssh/id_rsa.pub`
-    * Copy the output and paste in the Github "Key" box. Click **Add SSH key**. 
-
-  b. On Mac
-
-    * Open Terminal and type `ssh-keygen -t rsa -b 4096 -C "aisichenko@ucsb.edu"` using your email.
-    * Press enter when it says Enter file...
-    * No need for passphrase, press enter. Press enter again when prompted.
-    * Type `pbcopy < ~/.ssh/id_rsa.pub` which will automatically copy the key. Paste it in the Github "Key" box. Click to **Add SSH key**.
-
-7. Under Enable SSO, below your should see a button that says "Authorize" for the ucsb organization, click this. That's it.
-
-To clone any repository in ucsb organization (and therefore in the ocpi team), type:
+To clone any repository, type:
 
 ```
-git clone git@github.com:ucsb/tutorial_series.git  
+git clone https://github.com/aisichenko/tutorial_series
 ```
 
 ## 1. Git and Jupyter
