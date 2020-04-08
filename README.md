@@ -1,4 +1,4 @@
-# Welcome to the OCPI lab automation tutorial series
+# Welcome to the Git, Jupyter, and Python tutorial series
 
 Step 0. Get the repository onto your computer!
 
