@@ -6,7 +6,7 @@ Step 0. Get the repository onto your computer!
 To clone any repository, type:
 
 ```
-git clone https://github.com/aisichenko/tutorial_series
+git clone https://github.com/aisichenko/tutorial_series.git
 ```
 
 ## 1. Git and Jupyter
